@@ -11,12 +11,51 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- daysi ui link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/05eab3cc6e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- header section start here -->
-    <header>
-        <h3 class="text-red-500 text-4xl font-bold text-center">Hello developer</h3>
+    <header class="max-w-screen-xl mx-auto">
+        <!-- navbar section start here -->
+        <div class="navbar bg-[#F85559] rounded-full min-h-min py-3 px-8 text-white">
+            <div class="navbar-start hidden lg:block">
+                <div class="flex logo-items">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Shop</a>
+                    <a href="#">All Fruits</a>
+                </div>
+            </div>
+
+            <div class="navbar-center">
+                <div class="flex items-center">
+                    <img class="mr-4 lg:mr-7" src="./images/logo.png" alt="">
+                    <h3 class="text-xl lg:text-4xl font-bold">Fruits Brust</h3>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <button class="search-btn lg:block hidden bg-white py-2 px-4 rounded-full text-[#121212]">Search here <i
+                        class="fa-solid fa-magnifying-glass ml-10"></i></button>
+                <div class="dropdown lg:hidden block">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-8 z-[1] pt-2 -ml-10  shadow bg-base-100 rounded-lg text-[#121212]">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Shop</a>
+                        <a href="#">All Fruits</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
